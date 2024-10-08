@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    @*     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @*  <link rel="stylesheet" href="~/inventario_libreria.styles.css" asp-append-version="true" /> *@
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div>
+                <ul>
+                    <li>
+                        <a asp-controller="Home" asp-area="" asp-action="inicioSesion" class="aCuenta">Iniciar Sesión</a>
+                        <a asp-controller="Home" asp-area="" asp-action="index">Inicio</a>
+                        <a asp-controller="Home" asp-area="" asp-action="agregarProductos">Agregar productos</a>
+                        <a asp-controller="Home" asp-area="" asp-action="acercaDe">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+        <div class="divFondoFactura">
+
+        </div>
+@*         <div class="divFondo">
+            <section class="fondo">
+
+                <img class="imgIzq" src="../assets/izquierda.png" alt="Alternate Text" />
+                <div class="nombreLogo">
+                    <img class="logo" src="../assets/libro.png" alt="libro logo" />
+                    <img class="nombreLibrria" src="../assets/nombre.png" alt="nombre librería" />
+                </div>
+                <img class="imgDer" src="../assets/derecha.png" alt="Alternate Text" />
+            </section>
+        </div> *@
+
+    </header>
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="border-top footer text-muted">
+        @*       <div class="container"> *@
+        &copy; 2024 - CUC III Cuatrimestre  @* <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
+        @*         </div> *@
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

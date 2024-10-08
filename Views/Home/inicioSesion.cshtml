@@ -1,0 +1,35 @@
+﻿
+
+
+@page
+@model inventario_libreria.Views.Home.inicioSesionModel
+@{
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="divFactura">
+    <h2>Inicia Sesión</h2>
+
+</div>
+
+<section class="sectionForm">
+    <form class='formLogin' action="index" method="post">
+        <div class="login">
+            <div class="loginUsuario">
+                <label for="usuario">Usuario:</label>
+                <input class="user" type="text" id="usuario" name='usuario'>
+            </div>
+            <div class="loginPass">
+                <label class='labelPass' for="pass">Contraseña:</label>
+                <input class="pass" type="password" id="pass" name='pass'>
+            </div>
+
+            <div class="buttons">
+                <a class='enviar'>Ingresar</a>
+                <a class='enviar'>Registro</a>
+            </div>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,548 @@
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+
+* {
+    font-family: arial,sans-serif;
+    font-size: 20px;
+    font: bold;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --verde: rgb(33, 59, 71);
+    --blancoAzulado: rgba(230, 234, 245, 0.938);
+}
+main {
+   /* background-color: var(--blancoAzulado);*/
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    margin-right: 25px;
+}
+input {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.divFondo {
+    /*    background: url('../assets/fondo1.png');
+    background-size: cover;
+    height: 250px;*/
+    height: 250px;
+}
+.fondo{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.imgIzq, .imgDer{
+    height:250px;
+}
+.nombreLogo {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    height: 250px;
+}
+.logo{
+    height:90px;
+    width:110px;
+}
+nav {
+    position: relative; 
+    transition: all 0.3s ease; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--verde);
+    /*linear-gradient(rgba(50, 97, 228),rgba(52, 125, 233)  ); */
+    height: 65px;
+}
+/*
+a:hover {
+    border: 1px, solid, white;
+    padding: 10px;
+    border-radius: 50px;
+}*/
+
+th {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.icoCarrito {
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 25px;
+    background-size:10px 10px;
+}
+
+.aCuenta {
+    background: white;
+    padding:8px;
+    border: 1px, solid, white;
+    border-radius: 50px;
+    color: var(--verde);
+    
+}
+
+
+
+
+
+
+/*Tabla carrito*/
+.listaCarrito {
+    position: relative;
+}
+.listaCarrito .carrito {
+        display: none;
+}
+.listaCarrito:hover .carrito {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        left: 30%;
+        z-index: 1;
+        background-color: white;
+        padding: 20px;
+        min-height: 400px;
+        min-width: 325px;
+        border: 2px, solid, var(--verde);
+        border-radius: 8px;
+    }
+.tabla {
+    background-color: var(--verde);
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+
+}
+.buttonPagar {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    background-color: var(--verde);
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.buttonPagar:hover {
+        background-color: white;
+        color: var(--verde);
+        font: bold;
+        border-radius: 8px;
+        border: 2px, solid,var(--verde);
+ }
+/*------------------------------------------------------*/
+
+
+
+
+
+
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    top: 350px;
+    right: 25%;
+    left: 25%;
+}
+
+.sectionRuta {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--blancoAzulado);
+    padding: 8px;
+    border-radius: 7px;
+}
+
+select {
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+select:focus {
+        outline: none;
+    }
+
+option {
+    border-radius: 7px;
+}
+
+.targetas {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 2px, solid rgb(255, 255, 255); /*rgba(40, 79, 124, 0.849);*/
+    background: var(--blancoAzulado);
+    padding: 10px;
+    border-radius: 7px;
+    margin: 10px;
+    width: 350px;
+}
+.tarjeta div {
+    display: flex;
+
+
+}
+.divTargeta {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.divTargeta p{
+    font-weight: bold;
+}
+.targetasAcercaDe {
+    margin-top: 44px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+}
+.tarjetaAcercaDe {
+    display: flex;
+    flex-direction: row;
+/*    background-color: var(--verde);*/
+    background: var(--blancoAzulado);
+    font: bold;
+    border-radius: 7px;
+    margin: 10px;
+    width: 550px;
+    border: 2px, solid, var(--verde);
+}
+.divImg {
+    background-color: var(--verde);
+    padding: 8px;
+}
+.infoContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:25px;
+    font: bold;
+    font-size:30px;
+    align-content: center;
+    color: var(--verde);
+}
+.imgPerfil {
+    border-radius: 50%;
+    border: 2px, solid, white;
+}
+
+p {
+    margin: 5px;
+}
+
+/* .imgTargeta {
+    width: 300px;
+    border-radius: 7px;
+} */
+
+
+.inputAgregar {
+    background: var(--verde);
+    color: white;
+    border: none;
+    margin: 15px;
+    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+}
+
+.inputAgregar:hover {
+        background: white;
+        color: var(--verde);
+        border-color: var(--verde);
+        font-weight: bold;
+    }
+
+footer {
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background-color: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.divBuscar, .divFactura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+    height: 55px;
+    color: white;
+}
+
+
+.tarjeta img{
+    height: 185px;
+    width: 130px;
+    border-radius: 7px;
+}
+
+
+
+
+
+/*Página de index seccion de barra de busqueda*/
+.buscar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inputNombre, .inputAutor, .inputCategoria {
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.botonBuscar {
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: var(--verde);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('../assets/buscar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    padding: 8px;
+}
+/*---------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Login*/
+
+.login {
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid #223edd0e; */
+    background: var(--blancoAzulado); /*linear-gradient(rgba(12, 78, 201, 0.493), rgba(36, 101, 197, 0.164)*/
+    padding: 35px;
+    border-radius: 3%;
+    border: 2px, solid, var(--verde);
+    margin-top:100px;
+}
+
+.formLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginUsuario, .loginPass {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+label {
+    margin-right: 15px;
+}
+
+.user, .pass {
+/*    background: linear-gradient(rgba(23, 63, 138, 0.493), rgba(8, 88, 235, 0.493));*/
+    outline-color: none;
+    border: none;
+    text-align: center;
+    width: 165px;
+    border-radius: 3px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar {
+    margin: 15px;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: var(--verde);
+}
+    .enviar:hover {
+        background-color: white;
+        color: var(--verde);
+        font:bold;
+    }
+input:focus {
+    /*  border: 2px solid blue; */
+    outline: none;
+}
+
+
+/*-------------------------------------------*/
+
+
+
+/*Factura*/
+
+.divFondoFactura{
+    height:25px;
+    background: var(--blancoAzulado);
+}
+.factura {
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    background: var(--blancoAzulado);
+    width: 1550px;
+    border-radius: 8px;
+}
+
+.inputsFactura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionFactura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 175px;
+    right: 5%;
+    left: 8%;
+
+}
+
+.divTabla {
+    border-left: 4px solid var(--verde);
+}
+
+    .divTabla div {
+        display: flex;
+        justify-content: center;
+    }
+
+        .divTabla div img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+
+.tablaFactura {
+    margin-left: 15px;
+}
+
+    .tablaFactura th {
+        padding: 10px;
+        padding-left: 85px;
+        padding-right: 85px;
+        border: 2px solid var(--verde);
+    }
+
+.cabezaTablaFactura {
+    background-color: var(--verde);
+    color: white;
+}
+
+.inputsFactura input {
+    margin-bottom: 6px;
+}
+
+.inputsFactura label {
+    color: var(--verde);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.facturarGuardar {
+    background: var(--verde);
+    color: white;
+    border: none;
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 7px;
+}
+
+
+
+/*-------------------------------------------*/
