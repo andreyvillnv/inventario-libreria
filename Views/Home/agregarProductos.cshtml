@@ -10,6 +10,11 @@
 @{
     Layout = "~/Views/Shared/_LayaoutFactura.cshtml";
 }
+
+
+@* @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+} *@
 <div class="divFactura">
     <h2>Edición de productos: </h2>
 
@@ -31,19 +36,13 @@
     <button class="botonBuscar buscar" id=""></button>
 </div>
 
-<section class="sectionFactura">
+<section class="sectionFactura sectionFacturaProveedor">
 
     <form action="/" method="post" class="formFactura">
-        <div class="factura">
+        <div class="factura facturaProveedor">
             <div class="inputsFactura">
-                <label for="nombre">Nombre: </label>
+                <label for="nombre">Nombre proveedor: </label>
                 <input type="text" id="nombre" value="" />
-
-                <label for="pApellido">Primer apellido: </label>
-                <input type="text" id="pApellido" value="" />
-
-                <label for="sApellido">Segundo apellido: </label>
-                <input type="text" id="sApellido" value="" />
 
                 <label for="cedula">Cédula: </label>
                 <input type="text" id="cedula" value="" />
@@ -63,7 +62,25 @@
                 <label for="distrito">Distrito: </label>
                 <input type="text" id="distrito" value="" />
 
+
+
+                <label for="nombre">Nombre libro: </label>
+                <input type="text" id="nombre" value="" />
+
+                <label for="cedula">Autor: </label>
+                <input type="text" id="cedula" value="" />
+
+                <label for="correo">Categoría: </label>
+                <input type="text" id="correo" value="" />
+
+                <label for="telefono">Cantidad: </label>
+                <input type="text" id="telefono" value="" />
+
+                <label for="provincia">Precio: </label>
+                <input type="text" id="provincia" value="" />
+
                 <a class="facturarGuardar" value="Agregar">Guardar</a>
+                <a class="facturarGuardar" value="Agregar">Agregar</a>
             </div>
 
             <div class="divTabla">
@@ -75,6 +92,7 @@
                 <table class="tablaFactura">
                     <thead class="cabezaTablaFactura">
                         <tr>
+                            <th>Nombre proveedor</th>
                             <th>Nombre</th>
                             <th>Autor</th>
                             <th>Categoria</th>
@@ -89,13 +107,6 @@
                             <th>aaa</th>
                             <th>aaa</th>
                             <th>aaa</th>
-                        </tr>
-
-                        <tr>
-                            <th>aaa</th>
-                            <th>aaa</th>
-                            <th>aaa</th>
-                            <th>aaa</th>
                             <th>aaa</th>
                         </tr>
 
@@ -105,8 +116,20 @@
                             <th>aaa</th>
                             <th>aaa</th>
                             <th>aaa</th>
+                            <th>aaa</th>
+                        </tr>
+
+                        <tr>
+
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
                         </tr>
                         <tr>
+                            <th>aaa</th>
                             <th>aaa</th>
                             <th>aaa</th>
                             <th>aaa</th>

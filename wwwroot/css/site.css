@@ -78,7 +78,6 @@ input {
     width:110px;
 }
 nav {
-    position: relative; 
     transition: all 0.3s ease; 
     display: flex;
     width: 100%;
@@ -495,7 +494,11 @@ input:focus {
     width: 1550px;
     border-radius: 8px;
 }
-
+.facturaProveedor{
+    width: 100%;
+    margin-top: 1px;
+  
+}
 .inputsFactura {
     display: flex;
     flex-direction: column;
@@ -512,7 +515,15 @@ input:focus {
     left: 8%;
 
 }
-
+.sectionFacturaProveedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    right: 4%;
+    left: 1%;
+}
 .divTabla {
     border-left: 4px solid var(--verde);
 }
