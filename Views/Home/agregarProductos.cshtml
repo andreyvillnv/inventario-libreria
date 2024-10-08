@@ -8,9 +8,121 @@
 }
 
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayaoutFactura.cshtml";
 }
 <div class="divFactura">
-    <h2>Edición de productos</h2>
+    <h2>Edición de productos: </h2>
 
+    <label class="buscar" for="nombre">Nombre del libro</label>
+    <input class="inputNombre buscar" id="nombre" type="text">
+
+    <label class="buscar" for="autor">Autor</label>
+    <input class="inputAutor buscar" id="autor" type="text">
+
+    <label class="buscar" for="origen">Categoria</label>
+    <select class="inputCategoria buscar" type="select" id="origen" placeholder="bb">
+        <option value=""></option>
+        <option value="">Terror</option>
+        <option value="">Ficción</option>
+        <option value="">Cuentos</option>
+        <option value="">Ensayo</option>
+    </select>
+
+    <button class="botonBuscar buscar" id=""></button>
 </div>
+
+<section class="sectionFactura">
+
+    <form action="/" method="post" class="formFactura">
+        <div class="factura">
+            <div class="inputsFactura">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" value="" />
+
+                <label for="pApellido">Primer apellido: </label>
+                <input type="text" id="pApellido" value="" />
+
+                <label for="sApellido">Segundo apellido: </label>
+                <input type="text" id="sApellido" value="" />
+
+                <label for="cedula">Cédula: </label>
+                <input type="text" id="cedula" value="" />
+
+                <label for="correo">Correo: </label>
+                <input type="text" id="correo" value="" />
+
+                <label for="telefono">Teléfono: </label>
+                <input type="text" id="telefono" value="" />
+
+                <label for="provincia">Provincia: </label>
+                <input type="text" id="provincia" value="" />
+
+                <label for="canton">Cantón: </label>
+                <input type="text" id="canton" value="" />
+
+                <label for="distrito">Distrito: </label>
+                <input type="text" id="distrito" value="" />
+
+                <a class="facturarGuardar" value="Agregar">Guardar</a>
+            </div>
+
+            <div class="divTabla">
+                <div>
+                    <img class="imgLibro" src="../assets/libro.PNG" alt="">
+                    <img class="imgNombre" src="../assets/nombre.png" alt="">
+                </div>
+
+                <table class="tablaFactura">
+                    <thead class="cabezaTablaFactura">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Autor</th>
+                            <th>Categoria</th>
+                            <th>Catidad</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                        </tr>
+
+                        <tr>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                        </tr>
+
+                        <tr>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                        </tr>
+                        <tr>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                            <th>aaa</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </form>
+</section>

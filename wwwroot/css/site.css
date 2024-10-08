@@ -26,10 +26,10 @@ body {
 }
 :root{
     --verde: rgb(33, 59, 71);
-    --blancoAzulado: rgba(230, 234, 245, 0.938);
+    --blancoAzulado: rgb(230, 234, 245);
 }
 main {
-   /* background-color: var(--blancoAzulado);*/
+
     height: 100%;
 }
 
@@ -133,22 +133,41 @@ th {
         display: block;
         position: absolute;
         right: 0;
-        top: 100%;
-        left: 30%;
+        top: 50%;
+        left: 10%;
         z-index: 1;
-        background-color: white;
+        background-color:var(--blancoAzulado);
         padding: 20px;
         min-height: 400px;
         min-width: 325px;
         border: 2px, solid, var(--verde);
         border-radius: 8px;
     }
-.tabla {
+.tabla thead{
     background-color: var(--verde);
     border-radius: 8px;
     color: white;
     padding: 5px;
 
+}
+.tabla thead tr{
+    background-color: var(--verde);
+
+}
+
+.tabla thead tr th{
+    background-color: var(--verde);
+
+}
+.tabla tbody th{
+    color: var(--verde);
+    font-size: 12px;
+    text-align: center; 
+}
+
+.tabla tr{
+    border: 1px solid var(--verde);
+   
 }
 .buttonPagar {
     position: absolute;
@@ -164,7 +183,7 @@ th {
 .buttonPagar:hover {
         background-color: white;
         color: var(--verde);
-        font: bold;
+        font-weight: bold;
         border-radius: 8px;
         border: 2px, solid,var(--verde);
  }
@@ -182,7 +201,7 @@ th {
     flex-direction: column;
     position: absolute;
     justify-content: center;
-    top: 350px;
+    top: 450px;
     right: 25%;
     left: 25%;
 }
@@ -219,17 +238,22 @@ option {
 .tarjeta {
     display: flex;
     flex-direction: column;
-    border: 2px, solid rgb(255, 255, 255); /*rgba(40, 79, 124, 0.849);*/
+    border: 2px, solid rgb(255, 255, 255); 
     background: var(--blancoAzulado);
     padding: 10px;
     border-radius: 7px;
     margin: 10px;
     width: 350px;
+    color: var(--verde);
 }
 .tarjeta div {
     display: flex;
 
 
+}
+
+.tarjeta span{
+    margin-left: 10px;
 }
 .divTargeta {
     margin-left: 5px;
@@ -253,7 +277,6 @@ option {
 .tarjetaAcercaDe {
     display: flex;
     flex-direction: row;
-/*    background-color: var(--verde);*/
     background: var(--blancoAzulado);
     font: bold;
     border-radius: 7px;
@@ -494,27 +517,26 @@ input:focus {
     border-left: 4px solid var(--verde);
 }
 
-    .divTabla div {
+.divTabla div {
         display: flex;
         justify-content: center;
-    }
+}
 
-        .divTabla div img {
+.divTabla div img {
             height: 40px;
             margin-bottom: 10px;
-        }
-
+}
 
 .tablaFactura {
     margin-left: 15px;
 }
 
-    .tablaFactura th {
+.tablaFactura th {
         padding: 10px;
         padding-left: 85px;
         padding-right: 85px;
         border: 2px solid var(--verde);
-    }
+}
 
 .cabezaTablaFactura {
     background-color: var(--verde);
@@ -534,6 +556,7 @@ input:focus {
 .facturarGuardar {
     background: var(--verde);
     color: white;
+    text-align: center;
     border: none;
     margin: 15px;
     padding-top: 5px;

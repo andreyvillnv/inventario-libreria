@@ -6,102 +6,108 @@
     ViewData["Title"] = "Librería";
 }
 
- <div class="divBuscar">
+<div class="divBuscar">
 
-        <h2>Busqueda:</h2>
+    <h2>Busqueda:</h2>
 
-        <label class="buscar" for="nombre">Nombre del libro</label>
-        <input class="inputNombre buscar"  id="nombre" type="text">
+    <label class="buscar" for="nombre">Nombre del libro</label>
+    <input class="inputNombre buscar" id="nombre" type="text">
 
-        <label class="buscar"  for="autor">Autor</label>
-        <input class="inputAutor buscar" id="autor" type="text">
+    <label class="buscar" for="autor">Autor</label>
+    <input class="inputAutor buscar" id="autor" type="text">
 
-        <label class="buscar"  for="origen">Categoria</label>
-        <select class="inputCategoria buscar" type="select" id="origen" placeholder="bb">
-            <option value=""></option>                   
-            <option value="">Terror</option>
-            <option value="">Ficción</option>
-            <option value="">Cuentos</option>
-            <option value="">Ensayo</option>
-        </select>
+    <label class="buscar" for="origen">Categoria</label>
+    <select class="inputCategoria buscar" type="select" id="origen" placeholder="bb">
+        <option value=""></option>
+        <option value="">Terror</option>
+        <option value="">Ficción</option>
+        <option value="">Cuentos</option>
+        <option value="">Ensayo</option>
+    </select>
 
-        <button class="botonBuscar buscar" id="" ></button>
+    <button class="botonBuscar buscar" id=""></button>
 
-        <div class="divCarrito">
-            <ul>
-                <li class="listaCarrito">
-                    <img class="icoCarrito" src="./assets/cart.png" alt="">
-                    <div class="carrito">
-                        <table class="tabla">
-                            <thead class="cabezaTabla">
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Precio</th>
-                                    <th>Cantidad</th>
-                                    <th>Eliminar</th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        <@* input type="submit" asp-area=""  asp-controller="Home" asp-action="factura" class="buttonPagar" value="Pagar"> *@
+    <div class="divCarrito">
+        <ul>
+            <li class="listaCarrito">
+                <img class="icoCarrito" src="./assets/cart.png" alt="">
+                <div class="carrito">
+                    <table class="tabla">
+                        <thead class="cabezaTabla">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>El mundo y sus demonios</th>
+                                <th>10 000</th>
+                                <th>1</th>
+                            </tr>
+                            <tr>
+                                <th>El Señor de los anillos</th>
+                                <th>12 000</th>
+                                <th>1</th>
+                            </tr>
+                        </tbody>
+                        <@* input type="submit" asp-area="" asp-controller="Home" asp-action="factura" class="buttonPagar" value="Pagar"> *@
                         <a asp-controller="Home" asp-area="" asp-action="factura"  class="buttonPagar">Pagar</a>
-                        </table>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
 
- </div>
+</div>
 
 
-  <section class="sectionForm">
-            <form class="formulario">
-                <section class="targetas">
-                    <section class="tarjeta">
+<section class="sectionForm">
 
-                                <div>
+    <form class="formulario">
+        <section class="targetas">
 
-                                            <img src="./assets/portadas libros/1984.jpg" alt="" class="imgTargeta">
-                                            <div class="divTargeta">
-                                                <p>Nombre: </p><span>1984</span>
+            <section class="tarjeta">
+                <div>
+                    <img src="./assets/portadas libros/1984.jpg" alt="" class="imgTargeta">
+                    <div class="divTargeta">
+                        <p>Nombre: </p><span>1984</span>
                         <p>Autor: </p><span>George Orwell</span>
-                                                <p>Categoria: </p><span>Ciencia Ficción</span>
-                                                <p>Precio:</p>
-                                            </div>
+                        <p>Categoria: </p><span>Ciencia Ficción</span>
+                        <p>Precio:</p><span>10000</span>
+                    </div>
+                </div>
+                <a class="inputAgregar">Agregar</a>
+            </section>
 
-                                </div>
+            <section class="tarjeta">
+                <div>
+                    <img src="./assets/portadas libros/el mundo y sus demonios .png" alt="" class="imgTargeta">
+                    <div class="divTargeta">
+                        <p>Nombre:</p><span>El mundo y sus demonios</span>
+                        <p>Autor: </p><span>Carl Sagan</span>
+                        <p>Categoria</p><span>Ciencia</span>
+                        <p>Precio:</p><span>10000</span>
+                    </div>
+                </div>
+                <a class="inputAgregar">Agregar</a>
+            </section>
 
-                                <a class="inputAgregar">Agregar</a>
-                    </section>
-
-                    <section class="tarjeta">
-
-                                <div>
-
-                                            <img src="./assets/portadas libros/el mundo y sus demonios .png" alt="" class="imgTargeta">
-                                            <div class="divTargeta">
-                                                <p>Nombre:</p>
-                                                <p>Autor: </p>
-                                                <p>Categoria</p>
-                                                <p>Precio:</p>
-                                             </div>  
-
-                                </div>
-
-                                 <a class="inputAgregar">Agregar</a>
-                    </section>
-
-                    <section class="tarjeta">
-                        <div>
-                            <img src="./assets/portadas libros/señor de los anillos.png" alt="" class="imgTargeta">
-                            <div class="divTargeta">
-                                <p>Nombre:</p>
-                                <p>Autor: </p>
-                                <p>Categoria</p>
-                                <p>Precio:</p>
-                            </div>
-                        </div>
-                        <a class="inputAgregar">Agregar</a>
-                    </section>
-                </section>
-            </form>
+            <section class="tarjeta">
+                <div>
+                    <img src="./assets/portadas libros/señor de los anillos.png" alt="" class="imgTargeta">
+                    <div class="divTargeta">
+                        <p>Nombre:</p><span>Señor de los anillos</span>
+                        <p>Autor: </p><span>J.R.R. Tolkien</span>
+                        <p>Categoria</p><span>Fantasía</span>
+                        <p>Precio:</p><span>12000</span>
+                    </div>
+                </div>
+                <a class="inputAgregar">Agregar</a>
+            </section>
         </section>
+    </form>
+
+</section>
