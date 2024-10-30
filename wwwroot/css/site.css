@@ -40,12 +40,24 @@ ul {
 li {
     margin-left: 20px;
     margin-right: 20px;
+    
 }
-
-a {
+ a {
     text-decoration: none;
     color: azure;
-    margin-right: 25px;
+    margin-right: 10px; 
+    padding:8px;
+    border: 1px, solid, var(--verde); 
+    border-radius: 50px;
+
+}
+
+.aListaBarra:hover{
+    background: white;
+    padding:8px;
+    border: 1px, solid, white;
+    border-radius: 50px;
+    color: var(--verde); 
 }
 input {
     outline: none;
@@ -63,6 +75,7 @@ input {
     flex-direction: row;
     justify-content:space-between;
 }
+
 .imgIzq, .imgDer{
     height:250px;
 }
@@ -103,8 +116,8 @@ th {
     background: white;
     padding: 10px;
     border-radius: 50%;
-    width: 25px;
-    background-size:10px 10px;
+
+  
 }
 
 .aCuenta {
@@ -115,7 +128,13 @@ th {
     color: var(--verde);
     
 }
-
+.aCuenta:hover{
+    background:  var(--verde);
+    padding:8px;
+    border: 1px, solid, white;
+    border-radius: 50px;
+    color:white;
+}
 
 
 
@@ -153,10 +172,11 @@ th {
     background-color: var(--verde);
 
 }
-
-.tabla thead tr th{
+.cabezaTabla {
     background-color: var(--verde);
-
+}
+.tabla thead tr th {
+    background-color: var(--verde);
 }
 .tabla tbody th{
     color: var(--verde);
@@ -464,11 +484,11 @@ label {
     border: none;
     background-color: var(--verde);
 }
-    .enviar:hover {
+.enviar:hover {
         background-color: white;
         color: var(--verde);
         font:bold;
-    }
+}
 input:focus {
     /*  border: 2px solid blue; */
     outline: none;
@@ -510,7 +530,7 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 175px;
+    top: 100px;
     right: 5%;
     left: 8%;
 
@@ -520,18 +540,21 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 150px;
+    top: 375px;
     right: 4%;
     left: 1%;
 }
 .divTabla {
     border-left: 4px solid var(--verde);
 }
+.divTablaAgregar {
+    margin-left:18px;
 
-.divTabla div {
+}
+    .divTabla div {
         display: flex;
         justify-content: center;
-}
+    }
 
 .divTabla div img {
             height: 40px;

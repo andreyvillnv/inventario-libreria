@@ -38,7 +38,16 @@ namespace inventario_libreria.Controllers
             return View();
         }
 
+        public IActionResult AgregarProveedor()
+        {
+            return View();
+        }
+
         public IActionResult InicioSesion()
+        {
+            return View();
+        }
+        public IActionResult RegistroEmpleado()
         {
             return View();
         }

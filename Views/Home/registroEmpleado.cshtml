@@ -1,37 +1,22 @@
-﻿
-
-
-
-@page
-@model inventario_libreria.Views.Home.agregarProductosModel
+﻿@page
+@model inventario_libreria.Views.Home.registroEmpleadoModel
 @{
 }
-
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-@* @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-} *@
 <div class="divFactura">
-    <h2>Edición de productos: </h2>
+    <h2>Edición de empleados: </h2>
 
-    <label class="buscar" for="nombre">Nombre del libro</label>
+    <label class="buscar" for="nombre">Nombre del empleado</label>
     <input class="inputNombre buscar" id="nombre" type="text">
 
-    <label class="buscar" for="autor">Autor</label>
-    <input class="inputAutor buscar" id="autor" type="text">
+    <label class="buscar" for="cedula">Cédula</label>
+    <input class="inputAutor buscar" id="cedula" type="text">
 
-    <label class="buscar" for="origen">Categoria</label>
-    <select class="inputCategoria buscar" type="select" id="origen" placeholder="bb">
-        <option value=""></option>
-        <option value="">Terror</option>
-        <option value="">Ficción</option>
-        <option value="">Cuentos</option>
-        <option value="">Ensayo</option>
-    </select>
+    <label class="buscar" for="Correo">Correo</label>
+    <input class="inputAutor buscar" id="Correo" type="text">
 
     <button class="botonBuscar buscar" id=""></button>
 </div>
@@ -41,21 +26,27 @@
     <form action="/" method="post" class="formFactura">
         <div class="factura facturaProveedor">
             <div class="inputsFactura">
-            
-                <label for="nombre">Nombre libro: </label>
+                <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre" value="" />
 
-                <label for="cedula">Autor: </label>
+                <label for="pApellido">P. Apellido: </label>
+                <input type="text" id="pApellido" value="" />
+
+                <label for="sApellido">S. Apellido: </label>
+                <input type="text" id="sApellido" value="" />
+
+                <label for="cedula">Cédula: </label>
                 <input type="text" id="cedula" value="" />
 
-                <label for="correo">Categoría: </label>
+                <label for="correo">Correo: </label>
                 <input type="text" id="correo" value="" />
 
-                <label for="telefono">Cantidad: </label>
-                <input type="text" id="telefono" value="" />
-
-                <label for="provincia">Precio: </label>
-                <input type="text" id="provincia" value="" />
+                <label  for="origen">Tipo</label>
+                <select class="inputCategoria buscar" type="select" id="origen" placeholder="bb">
+                    <option value=""></option>
+                    <option value="">Empleado</option>
+                    <option value="">Admin</option>
+                </select>
 
                 <a class="facturarGuardar" value="Agregar">Guardar</a>
                 <a class="facturarGuardar" value="Agregar">Agregar</a>
@@ -71,12 +62,12 @@
                 <table class="tablaFactura">
                     <thead class="cabezaTablaFactura">
                         <tr>
-                            <th>Nombre proveedor</th>
                             <th>Nombre</th>
-                            <th>Autor</th>
-                            <th>Categoria</th>
-                            <th>Catidad</th>
-                            <th>Precio</th>
+                            <th>P Apellido</th>
+                            <th>S Apellido</th>
+                            <th>Cédula</th>
+                            <th>Correo</th>
+                            <th>Tipo</th>
                         </tr>
                     </thead>
                     <tbody>
